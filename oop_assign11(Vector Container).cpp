@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    vector<int> numbers;
+
+    numbers.push_back(10);
+    numbers.push_back(20);
+    numbers.push_back(30);
+
+    cout << "Vector elements: ";
+
+    for (int i = 0; i < numbers.size(); i++)
+    {
+        cout << numbers[i] << " ";
+    }
+
+    cout << "\nNumber of elements: " << numbers.size();
+
+    numbers.pop_back();
+
+    cout << "\nAfter removing the last element: ";
+
+    for (int i = 0; i < numbers.size(); i++)
+    {
+        cout << numbers[i] << " ";
+    }
+
+    cout << endl;
+
+    return 0;
+}
